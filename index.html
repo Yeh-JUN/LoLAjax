@@ -18,9 +18,7 @@
             <h1>英雄聯盟圖鑑</h1>
         </div>
 
-        <div class='row justify-content-around'>
-
-        </div>
+        <div class='row justify-content-around'></div>
     </div>
 
     <!-- Modal -->
@@ -29,7 +27,6 @@
         <div class="modal-dialog">
             <div class="modal-content">
 
-
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -37,14 +34,12 @@
                     </button>
                 </div>
 
-
                 <div class="modal-body">
                     <img src="" class="lolImage">
                     <iframe class="video" width="100%" height="241" src="https://www.youtube.com/embed/tAv-Ni1Ykxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <!-- <h1 id="description" class="text-primary"></h1> -->
                     <div class="modal-info"></div>
                 </div>
-
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -80,7 +75,6 @@
     <script type='module'>
         import { $g , $c } from './modules/helpers.js';
         const imgUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg`;
-        // const imgUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${keyname}_0.jpg`;
         const url = "https://ddragon.leagueoflegends.com/cdn/10.22.1/data/zh_TW/champion.json";
         let lolObject , idList , nameList , blurbList , hpList , moveSpeedList , armorList , spellBlockList , attackRangeList;
         window.onload = function(){
@@ -163,45 +157,11 @@
 
                     row.append(cloneContent);
                 });
-
             }
-            // xhr.open("GET" , imgUrl);
             xhr.open("GET" , url);
             xhr.send();
             
         }
-
-        
-
-
-
-
-        // let row = $g('.row');
-        //LOL https://ddragon.leagueoflegends.com/cdn/10.22.1/data/zh_TW/champion.json
-
-        // window.onload = function () {
-            
-        //     // 用模組 $g 選取
-        //     let card = $g('#cardLol');
-        //     let cloneContent = card.content.cloneNode(true);
-        //     cloneContent.querySelector('h5').innerText = "炭火肉食披薩";
-        //     cloneContent.querySelector('img').src = "https://www.0800076666.com.tw/Files/MenuPizza/62/%E7%82%AD%E7%81%AB%E8%82%89%E9%A3%9F.png";
-
-		// 	// todo...modal block
-        //         cloneContent.querySelector('.btn').addEventListener('click' , function(){
-                
-        //         this.setAttribute('data-toggle' , 'modal');
-        //         this.setAttribute('data-target' , '#exampleModal');
-
-        //         let modal = $g('exampleModal');
-        //         modal.querySelector('h5').innerText = "炭火肉食披薩";
-        //         modal.querySelector('#pizzaImage').src = "https://www.0800076666.com.tw/Files/   MenuPizza/62/%E7%82%AD%E7%81%AB%E8%82%89%E9%A3%9F.png";
-        //         modal.querySelector('#description').innerText = "炭火肉食披薩";
-        //     });
-
-        //     row.append(cloneContent);
-        // }
-
     </script>
 </body>
 
