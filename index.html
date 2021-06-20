@@ -55,7 +55,7 @@
             <img src="" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title"></h5>
-                <p class="card-text"></p>
+                <p class="card-text "></p>
                 <button href="#" class="btn btn-primary mr-1">詳細</button>
                 <button id="btn-video" href="#" class="btn btn-danger">影片</button>
             </div>
@@ -134,6 +134,7 @@
                     modalHeader.innerText = `${item.id} - ${item.name}`;
                     modalHeader.classList.add('modalHeader');
                     modalInfo.innerText = `
+                        ${item.blurb}
                         HP : ${item.stats.hp}
                         Move Speed : ${item.stats.movespeed}
                         Armor : ${item.stats.armor}
