@@ -117,7 +117,7 @@
                     let card = $g('#cardLol');
                     let cloneContent = card.content.cloneNode(true);
                     cloneContent.querySelector('.card-title').innerText = `${index}. ${item.id} - ${item.name}`;
-                    cloneContent.querySelector('.card-text').innerText = `${item.blurb}`;
+                    cloneContent.querySelector('.card-text').innerText = `${item.blurb.slice(0,28)}...`;
                     cloneContent.querySelector('.card-img-top').src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${item.id}_0.jpg`;
                     
 

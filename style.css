@@ -11,12 +11,12 @@ body{
     font-size: 18px;
 }
 
-.card-text{
+/* .card-text{
     -webkit-line-clamp: 2;
     overflow:hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
-}
+} */
 
 .modalHeader{
     font-size: 20px;
