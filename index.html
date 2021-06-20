@@ -81,12 +81,12 @@
             let xhr = new XMLHttpRequest();
             xhr.onload = function(){
                 lolObject = JSON.parse(this.responseText);
-                console.log(lolObject.data);
+                // console.log(lolObject.data);
                 let lolArray = Object.entries(lolObject.data)
-                console.log(lolArray);
+                // console.log(lolArray);
                 let lolArrayChange = Object.entries(lolObject.data).map(item=>item[1]);
-                console.log("lolArrayChange");
-                console.log(lolArrayChange);
+                // console.log("lolArrayChange");
+                // console.log(lolArrayChange);
 
                 //#region hard core
                 //EN-name
